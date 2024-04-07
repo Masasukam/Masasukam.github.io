@@ -40,18 +40,63 @@
 						<header class="special"><section id="About"><h2><font size="6">ABOUT ME</font></h2></section>
 							<p>"Get it done, or let it go"</p><br>
 							<p>
-								<a href="index.html" class="button">Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="index.html" class="button">Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="index.html" class="button">Education</a>&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="index.html" class="button">Experience</a>&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="index.html" class="button">Certification</a>
+								<a class="button" onclick="showContent('intro-content')">Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="button" onclick="showContent('skills-content')">Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="button" onclick="showContent('education-content')">Education</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="button" onclick="showContent('experience-content')">Experience</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="button" onclick="showContent('certification-content')">Certification</a>
 							</p>
 
-						</header><div class="content">
+						</header>
+						<div class="content" id="intro-content"><font size=3>
 							<p>I am currently pursuing my Master of Engineering in Computer Science at Cornell University, with a graduation date set for December 2024. Previously, I completed my Bachelor's of Science in Computer Science and Mathematics at University of British Columbia. </p>
 							<p>At Cornell University, I am primarily focusing on AI/ML, parallel computing, and computer vision. I am utilizing Pytorch/Tensorflow in particular to solve problems related to 3D-Reconstruction, feature detection, and automating tasks, etc. Additionally, I am researching on parallel computing techniques to optimize the performance of computational simulations in the context of large-scale data processing across GPUs, shared memory, and distributed memory systems. </p>
-							<p>That being said, I have 5-6 years of experience with writing significant amounts of code with experience in API development, Java, C, Python, and many other languages. I thrive on the challenge of maintaining a strong product focus, always striving to deliver the best possible experience for users. Additionally, I enjoy giving demos, as it allows me to showcase the impact of the software I help create. </p>
+							<p>That being said, I have 5-6 years of experience with writing significant amounts of code with experience in API development, Java, C, Python, and many other languages. I thrive on the challenge of maintaining a strong product focus, always striving to deliver the best possible experience for users. Additionally, I am a team player who love to foster an inclusive and supportive atmosphere where everyone's contributions are valued and respected. </p>
+						</font></div>
+						
+						<div class="content" id="skills-content" style="display: none;"><font size=3>
+							<li><strong>Languages:</strong> C++, Python, Java, C, JavaScript, TypeScript, C#, Kotlin, PHP, HTML/CSS, R, Bash</li>
+							<li><strong>Databases:</strong> MySQL, MongoDB, Oracle, NoSQL, DynamoDB, AWS (Cloud Practitioner)</li>
+							<li><strong>Libraries:</strong> PyTorch, TensorFlow, React, Node.js, Cuda, MPI, OpenMP, Flask, Spring, Maven</li>
+							<li><strong>Tools:</strong> Git, AWS, Docker</li>
+						</font></div>
+						<div class="content" id="education-content" style="display: none;"><font size=3>
+							<p> <strong>Cornell University</strong> | Jan 2024 - Dec 2024<br>
+							<strong>Master of Engineering</strong> in Computer Science<br>     	         		    	       
+							Relevant Coursework: Parallel Computing, Machine Learning, Cloud Computing, Computer Vision, 3D Reconstruction, Computer Networking, Operating Systems</p><br>
+							<p>	<strong>University of British Columbia</strong> | Sep 2019 - May 2023<br>
+								<strong>Bachelor of Science</strong> in Computer Science & Mathematics<br>    		     
+								Relevant Course: Test-Driven Development, Applied AI & ML, Databases, Data Structures & Algorithms, Object-Oriented Programming, System design, Linux System, Linear Algebra</p>
+								
+							</font></div>
+
+						<div class="content" id="experience-content" style="display: none;" >
+							<p><strong>Software Research & Development Intern</strong> | Sep 2021 - April 2022<br>
+								<strong>INTEL Corporation</strong> | Vancouver, BC<br>
+								▪ Developed and implemented C-based optimization settings for quality-speed tradeoffs of low-delay streaming
+								and video compression in the widely-used SVT-AV1 encoder, decreased ~10% bitrate loss and increased ~8% speed.<br>
+								▪ Developed testing scripts using Python and ran on AWS EC2 Linux instances for evaluating bitrate/speed tradeoffs for existing SVT-AV1 features; Collaborated with teams to perform comparative analysis among video encoders in the market using data obtained from tests; addressed performance and stability issues through debugging.<br>
+								▪ Designed and implemented an optimized video decoder program using C. Simplified the 5 decoding levels to a more
+								maintainable 2-level system by evaluating the decoder speed against existing solutions in the market.<br>
+								▪ Implemented unit tests using Check framework , achieved test coverage of 95%+ and packaged the program using CMake.</li></p>
+							<p>
+								<strong>Software Developer Intern</strong> | July 2019 - Aug 2019<br>
+								<strong>Tencent Holdings Ltd</strong> | Shenzhen, China<br>
+								▪ Built an event-driven notification system using Python and Flask framework to keep track of keywords and feedback
+								given by users on stock forums.<br>
+								▪ Extracted dynamically generated content from JavaScript-based stock forums by integrating Python libraries Scrapy and Splash, enabling server-side JavaScript execution and rendering for full HTML access. Utilized dynamic IPs and
+								controlled crawling rate to avoid throttling.<br>
+								▪ Persisted users post data into MySQL databases consisting of >5G user data for further analysis and relational
+								database management. Crafted schema to encapsulate essential attributes and employed strategic indexing on crucial attributes that are frequently used in search for efficient data retrieval.</p>
+
 						</div>
+
+						<div class="content" id="certification-content" style="display: none;"><font size=3>
+							<li>AWS Cloud Practitioner</li>
+							<li>CASI Snowboard Instructor</li>
+
+						</font></div>
+
 					</section><!-- Two --><section id="two" class="wrapper style2"><header><h2><font size="6">MY PROJECTS</font></h2>
 							<p>SCROLL DOWN TO SEE MORE</p>
 						</header><div class="content">
@@ -136,4 +181,5 @@
 		</div>
 
 		<!-- Scripts -->
+			<script src="js/custom.js"></script>
 			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.poptrox.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
