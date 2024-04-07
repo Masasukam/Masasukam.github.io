@@ -51,6 +51,35 @@
 		-webkit-text-size-adjust: none;
 	}
 
+.myheader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	background: seagreen;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+
+}
+
+.logo {
+	font-size: 32px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.navbar {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2906,7 +2935,7 @@
 
 	body {
 		background-color: #1e1f23;
-		padding-top: 8rem;
+		padding-top: 0;
 	}
 
 		body.is-loading:after {
@@ -2981,7 +3010,7 @@
 	@media screen and (max-width: 1280px) {
 
 		body {
-			padding-top: 6rem;
+			padding-top: 0;
 			background-attachment: scroll;
 			background-size: auto;
 			background-position: top;
