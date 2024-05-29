@@ -33,17 +33,18 @@
 						<header class="special"><h2><font size="6">About the Project</font></h2>
 							<p>"A nature-inspired optimization"</p><br>
 							<p>
-								<a href="" class="button">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="https://github.com/Masasukam/Parallel-Computing-Fish-School-Search" class="button">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;
 								<!-- <a href="https://github.com/Masasukam/Clinic-Management-System" class="button">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
 								<a href="index.html" class="button">Home</a>
 							</p>
 
 						</header><div class="content">
-							<p><center><font size = 6><strong>RELEASING IN MAY, 2024</strong></font></center></p><br>
+							<!-- <p><center><font size = 6><strong>RELEASING IN MAY, 2024</strong></font></center></p> -->
+							<br>
 						<ul><font size=3>
-							<li>Implemented and evaluated the Fish School Search using parallel computing techniques to optimize solutions for real-world problems, aiming for improved efficiency over traditional serial approaches.
+							<li>Led a group of three to implement and evaluate the Fish School Search (FSS) using parallel computing techniques, in order to optimize solutions for real-world problems, aiming for improved efficiency over traditional serial approaches.
                                  </li><br>
-							<li>Utilized CUDA and MPI for algorithm parallelization, leveraging multi-core CPU and GPU resources at the National Energy Research Scientific Computing Center (NERSC).</li><br>
+							<li>Utilized CUDA, OpenMP, and MPI for algorithm parallelization on Perlmutter GPU, multi-core CPU, and distributed-memory machines (resources at the National Energy Research Scientific Computing Center (NERSC)).</li><br>
                             <li>Designed experiments to benchmark parallel FSS against serial implementations, focusing on runtime efficiency, convergence speed, and scalability for large-scale graph optimization problems.</li><br>
 							<li><strong>Skills/Technologies:</strong> C++, C, CUDA, MPI, OpenMP </li>
 						</font></ul>
@@ -77,44 +78,52 @@
 					</section>
 					
 					<section id="three" class="wrapper">
-						<!-- <div class="spotlight">
-							<div class="image flush"><img src="images/pic06.jpg" alt="" width="700" height="430"></div>
+						<div class="spotlight">
+							<div class="image flush"><img src="images/fishschool.jpg" alt="" width="700" height="443"></div>
 							<div class="inner">
-								<h3>Clinic Management System</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Objectives</h3>
+								<p>Fish School Search (FSS) algorithm, which was originally inspired from the behavior of fish, by emulating how fish forage to find near optimal solutions.</p>
+								<p>Our goal is to optimize the algorithm to faster convergence compared to the serial implementation. Hence, more complex problems can then be solved by utilizing our parallelized FSS algorithm (e.g. graph problems, networks assignment, ML parameter optimization) more efficiently.</p>
 							</div>
 						</div>
 						<div class="spotlight alt">
-							<div class="image flush"><img src="images/pic07.jpg" alt="" width="700" height="430"></div>
+							<div class="image flush"><img src="images/fss_benchmark.jpg" alt="" width="700" height="430"></div>
 							<div class="inner">
-								<h3>Website Generator</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Benchmark Function</h3>
+								<p><FONT COLOR="#a7a9b1"> The upper colored 3D graphs represent our benchmark function: higher the f value, more abundant the food resource at the coordinate is. </FONT></p>
+									<p><FONT COLOR="#a7a9b1">At t = 88.25, fish have just started to converge to the local maxima at the center. When t = 449.53, most of the fish have converged to the local maxima. Likewise, at t=633.02, local maximas have moved to the four corners, fish particles are then spreading out to converge.</FONT></p>
 
 							</div>
 						</div>
 						<div class="spotlight">
-							<div class="image flush"><img src="images/pic08.jpg" alt="" width="700" height="430"></div>
+							<div class="image flush"><img src="images/performance.jpg" alt="" width="700" height="430"></div>
 							<div class="inner">
-								<h3>Parallel Computing Fish School Search</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Performance Across Machines</h3>
+								<p>The left log-log plot shows the performance of our parallellelization on GPU in red, shared-memory CPU in yellow, and compared against the serial implementation on single-core CPU in blue. The x-axis represents the log10(# fish) and the y-axis represents the log10(time) in seconds. 
+									It is as expected to have a positive correlation between the increasing number of fish and the increasing GPU/CPU runtime. As well, the parallelized speedup is within expectation to significantly improve the convergence speed. </p>
 
 							</div>
 						</div>
 						<div class="spotlight alt">
-							<div class="image flush"><img src="images/pic07.jpg" alt="" width="700" height="430"></div>
+							<div class="image flush"><img src="images/strongScaling.jpg" alt="" width="700" height="430"></div>
 							<div class="inner">
-								<h3>Feature Detection</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Strong Scaling on Shared-Memory CPUs</h3>
+								<p><FONT COLOR="#a7a9b1">The right Speedup plot is produced by running 1e5 (100,000) fish with 64 threads on the Perlmutter shared memory CPU; it shows how closely our OpenMP code approaches the idealized p-time (p = number of threads) speedup. The result is within expectation, as the parallelization line appears to be close to the idealized speedup, but there is definitely space left to continue improving the parallelization implementation.</FONT></p>
 
 							</div>
-						</div> -->
-						<a href="index.html" class="button">Home</a>
+						</div>
+
+						
 					</section></div>
 					
 			</section>
-			
+
+			<a href="index.html" class="button">Home</a>
+
 			<!-- Footer --><footer id="footer"><div class="container">
-				
+				<div class="copyright">
+					
+This research used resources of the National Energy Research Scientific Computing Center, a Department of Energy Office of Science National User Facility using NERSC award NERSC DDR-ERCAP0027296.
 			</footer>
 		</div>
 

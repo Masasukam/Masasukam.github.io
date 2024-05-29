@@ -33,15 +33,15 @@
 						<header class="special"><h2><font size="6">About the Project</font></h2>
 							<p>"Reconstruct the 3D World"</p><br>
 							<p>
-								<a href="" class="button">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="https://github.com/Masasukam/Feature-Detection/" class="button">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;
 								<!-- <a href="https://github.com/Masasukam/Clinic-Management-System" class="button">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
 								<a href="index.html" class="button">Home</a>
 							</p>
 
 						</header><div class="content">
-							<p><center><font size = 6><strong>RELEASING IN APRIL, 2024</strong></font></center></p><br>
+							<!-- <p><center><font size = 6><strong>RELEASING IN APRIL, 2024</strong></font></center></p> --><br>
 						<ul><font size=3>
-							<li>A project focused on detecting and matching features across different images to facilitate panorama stitching and 3D-world reconstruction.
+							<li>A project in Python focused on detecting and matching features across different images to facilitate panorama stitching and 3D-world reconstruction.
                                  </li><br>
 							<li>Utilized Harris corner detection for identifying points of interest in images, including the calculation of Harris scores and orientation for pixel-wise image analysis.</li><br>
                             <li>Conducted comprehensive testing of individual components (Harris corner detection, feature descriptors, feature matching) and full system integration to ensure accuracy and reliability of the reconstruction process.</li><br>
@@ -77,44 +77,59 @@
 					</section>
 					
 					<section id="three" class="wrapper">
-						<!-- <div class="spotlight">
-							<div class="image flush"><img src="images/pic06.jpg" alt="" width="700" height="430"></div>
+
+						<div class="spotlight">
+							<div class="image flush"><img src="images/feature1.jpg" alt="" width="700" height="300"></div>
 							<div class="inner">
-								<h3>Clinic Management System</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Objectives</h3>
+								<p>The goal of feature detection and matching is to identify a pairing between a point in one image and a corresponding point in another image</p>
 							</div>
 						</div>
 						<div class="spotlight alt">
-							<div class="image flush"><img src="images/pic07.jpg" alt="" width="700" height="430"></div>
+							<div class="image flush"><img src="images/feature-nasa1.jpg" alt="" width="700" height="400"></div>
 							<div class="inner">
-								<h3>Website Generator</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Corner Detection</h3>
+								<p><FONT COLOR="#a7a9b1">Good feature points should be reproducible and distinctive enough that they are easy to match. Corners/edges have such good characteristics that we can easily recognize the point by analyzing small patches (colored boxes pointed by arrow).</FONT></p>
+								<p><FONT COLOR="#a7a9b1">	Shifting the patch in any direction should give a large change in intensity. I utilized Harris Detector for corner detections. </FONT></p>
 
 							</div>
 						</div>
 						<div class="spotlight">
-							<div class="image flush"><img src="images/pic08.jpg" alt="" width="700" height="430"></div>
+							<div class="image flush"><img src="images/dm1.jpg" alt="" width="700" height="430"></div>
 							<div class="inner">
-								<h3>Parallel Computing Fish School Search</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
-
+								<h3>Feature Descriptors and Matching</h3>
+								<p>Feature description: For each detected feature point (or pixel), describe the point using Multiscale Oriented Patche descriptors (MOPS) obtained by: Translate -> Rotate -> Scale -> Translate. (Examples shown in the picture on the left)</p>
+								<p>Feature Matching: Measure the similarity between every pair of descriptors. Applied ratio difference between best and the second best match to avoid ambiguous matches.</p>
 							</div>
 						</div>
 						<div class="spotlight alt">
-							<div class="image flush"><img src="images/pic07.jpg" alt="" width="700" height="430"></div>
+							<div class="image flush"><img src="images/sample2.jpg" alt="" width="700" height="330"></div>
 							<div class="inner">
-								<h3>Feature Detection</h3>
-								<p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+								<h3>Sample 1</h3>
+								<p></p>
 
 							</div>
-						</div> -->
-						<a href="index.html" class="button">Home</a>
+						</div>
+						<div class="spotlight ">
+							<div class="image flush"><img src="images/sample1.jpg" alt="" width="700" height="330"></div>
+							<div class="inner">
+								<h3>Sample 2</h3>
+								<p></p>
+
+							</div>
+						</div>
+
 					</section></div>
 					
 			</section>
 			
+			<a href="index.html" class="button">Home</a>
+
+
 			<!-- Footer --><footer id="footer"><div class="container">
-				
+				<div class="copyright">
+					Referenced From 	
+					Bharath Hariharan
 			</footer>
 		</div>
 
